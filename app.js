@@ -4,8 +4,12 @@ const math = 85;
 const science = 90;
 const english = 88;
 
+function calculateAverage(math, science, english) {
+    return (math + science + english) / 3;
+}
+
 const total = math + science + english;
-const average = total / 3;
+const average = calculateAverage(math, science, english);
 const finalGrade = Math.round(average);
 
 let result;
