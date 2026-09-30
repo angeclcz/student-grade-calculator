@@ -9,11 +9,14 @@ const average = total / 3;
 const finalGrade = Math.round(average);
 
 let result;
+let remarks;
 
 if (finalGrade >= 75) {
     result = "Passed";
+    remarks = "Good job!";
 } else {
     result = "Failed";
+    remarks = "Needs improvement.";
 }
 
 console.log("Student Grade Calculator");
@@ -25,3 +28,4 @@ console.log("Total: " + total);
 console.log("Average: " + average);
 console.log("Final Grade: " + finalGrade);
 console.log("Result: " + result);
+console.log("Remarks: " + remarks);
